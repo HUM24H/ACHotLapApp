@@ -1,5 +1,19 @@
 import os
 
+# Fetch AC Car List
+def processCarList(sRootInstall):
+    # Fetch Car Directory List
+    aCarList = ProcessCarDirList(sRootInstall)
+
+    return aCarList
+
+# Fetch AC Track List
+def processTrackList(sRootInstall):
+    # Fetch Track Directory List
+    aTrackList = ProcessTrackDirList(sRootInstall)
+
+    return aTrackList
+
 def SetSepValue(sRootInstall):
     # Assign correct path separator value
     if "/" in sRootInstall:
